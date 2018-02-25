@@ -71,7 +71,7 @@ function removeFromCart(item) {
     if (cart[i].hasOwnProperty('item')) {
       newItem = true
       cart = cart.slice(0, i).concat(cart.slice(i + 1))
-      
+      l--
     }
     else if (cart[i]) {
       console.log("That item is not in your cart.")
