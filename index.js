@@ -43,9 +43,8 @@ function viewCart() {
       
         }
         else if (itemList.length > 2) {
-          
-           itemList = itemList.join(", and ")
-           
+           itemsList[l-1] = "and "
+           itemList = itemList.join(", ")
         }
         
       console.log(`In your cart, you have ${itemList}.`)
