@@ -73,7 +73,7 @@ function removeFromCart(item) {
       l--
     }
   }
-  if (cart[i] != newItem) {
+  if (newItem === null) {
       console.log("That item is not in your cart.")
     }
 }
