@@ -34,19 +34,19 @@ function viewCart() {
       
           itemList.push(`${value} at $${price}`)
           
-           if (itemList.length === 1) {
-      
-           } else if (itemList.length === 2) {
-        
-               itemList = itemList.join(" and ")
-      
-             }
-              else if (itemList.length > 2) {
-          
-                 itemList = itemList.join(", and ")
-          
-              }
         }
+      if (itemList.length === 1) {
+      
+      } else if (itemList.length === 2) {
+        
+          itemList = itemList.join(" and ")
+      
+        }
+        else if (itemList.length > 2) {
+          
+           itemList = itemList.join(", and ")
+        }
+        
       console.log(`In your cart, you have ${itemList}.`)
 }
 
