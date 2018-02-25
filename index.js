@@ -23,14 +23,14 @@ function viewCart() {
   if (l === 0) {
     console.log("Your shopping cart is empty.");
     return
-  } else {
+  }
   
-      let itemList = []
+    let itemList = []
   
-        for(let i = 0; i < l; i++){
-          let items = cart[i]
-          let value = Object.keys(items)
-          let price = items[value]
+      for(let i = 0; i < l; i++){
+        let items = cart[i]
+        let value = Object.keys(items)
+        let price = items[value]
       
           itemList.push(`${value} at $${price}`)
           
@@ -48,7 +48,6 @@ function viewCart() {
               }
         }
       console.log(`In your cart, you have ${itemList}.`)
-    }
 }
 
 function total() {
