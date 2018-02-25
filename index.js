@@ -66,8 +66,8 @@ function total() {
 function removeFromCart(item) {
   let newItem = false
   
-  let l = cart.length
-  for(let i=0; i < l; i++) {
+  
+  for(let i=0; let l = cart.length; i < l; i++) {
     if (cart[i].hasOwnProperty('item')) {
       newItem = true
       cart = cart.slice(0, i).concat(cart.slice(i + 1))
