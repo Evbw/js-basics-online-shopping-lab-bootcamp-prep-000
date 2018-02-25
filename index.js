@@ -72,7 +72,7 @@ function removeFromCart(item) {
       cart = cart.slice(0, i).concat(cart.slice(i + 1))
       l--
     }
-    if (cart[i] != newItem) {
+    if (newItem) {
       console.log("That item is not in your cart.")
     }
   }
