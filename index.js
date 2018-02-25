@@ -74,7 +74,6 @@ function removeFromCart(item) {
     }
     else if (cart[i] === null) {
       console.log("That item is not in your cart.")
-      return cart
     }
   }
 }
