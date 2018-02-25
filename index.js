@@ -64,12 +64,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  let item = false
+  let newItem = false
   
   let l = cart.length
   for(let i=0; i < l; i++) {
     if (cart[i].hasOwnProperty('item')) {
-      item = true
+      newItem = true
       cart = cart.slice(0, i).concat(cart.slice(i + 1))
       
     }
