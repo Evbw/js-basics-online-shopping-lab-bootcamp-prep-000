@@ -43,7 +43,7 @@ function viewCart() {
       
         }
         else if (itemList.length > 2) {
-           itemList[l-1] = 
+           itemList[l-1] = "and ".concat()
            itemList = itemList.join(", ")
         }
         
