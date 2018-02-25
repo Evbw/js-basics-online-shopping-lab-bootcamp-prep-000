@@ -70,7 +70,7 @@ function removeFromCart(item) {
       cart = cart.slice(0, i)
       return cart
     }
-    else if (cart[i]) {
+    else if (cart[i].hasOwnProperty('item')) {
       console.log("That item is not in your cart.")
       return cart
     }
