@@ -64,19 +64,19 @@ function total() {
 }
 
 function removeFromCart(item) {
-  let newItem = false
-  var l = cart.length
-  for(let i = 0; i < l; i++) {
+  let itemInCart = false;
+
+  for (let i = 0, l = cart.length; i < l; i++) {
     if (cart[i].hasOwnProperty(item)) {
-      newItem = true
-      cart = cart.slice(0, i).concat(cart.slice(i + 1))
-      l--
-    }
-    else if (cart[i] === null) {
-      console.log("That item is not in your cart.")
-      return cart
+      itemInCart = true;
+      cart = cart.slice(0, i).concat(cart.slice(i + 1));
+      l--;
     }
   }
+
+  if (!itemInCart) {
+    console.log("That item is not in your cart.");
+}
 }
 
 function placeOrder(cardNumber) {
